@@ -29,9 +29,12 @@ imageElement.setAttribute('alt',`<strong>'Prolie image of ${fullName}'</strong>`
 
 /* Step 5 - Array */
 const favoriteFoods = ['Pizza','Tacos','Pasta','Burgers'];
+foodElement.textContent = favoriteFoods;
+
 let newFood = "Bacon";
 favoriteFoods.push(newFood);
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
-foodElement.textContent = favoriteFoods;
+
 
 
