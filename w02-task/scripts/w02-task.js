@@ -20,6 +20,7 @@ const imageElement = document.getElementById('profilePicture')
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
+foodElement.innerHTML = `<strong>${favoriteFoods}</strong>`;
 imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt',`<strong>'Prolie image of ${fullName}'</strong>`);
 
