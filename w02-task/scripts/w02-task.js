@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = "Levi Johnson";
 let currentYear = "2023";
-let profilePicture = 'C:\Users\lwjoh\Downloads\BYUI_fall_2023\cse121b\w02-task\images\templePic.jpg';
+let profilePicture = 'images/templePic.jpg';
 
 
 
