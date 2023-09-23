@@ -13,7 +13,7 @@ let profilePicture = 'images/templePic.jpg';
 const nameElement = document.getElementById('name');
 const foodElement = document.getElementById('food');
 const yearElement = document.querySelector('#year');
-const imageElement = document.getElementById('images/placeholder.png')
+const imageElement = document.querySelector('img[src="images/templePic.jpg"]');
 
 
 /* Step 4 - Adding Content */
