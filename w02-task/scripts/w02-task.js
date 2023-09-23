@@ -19,7 +19,7 @@ const imageElement = document.querySelector('img[src="images/placeholder.png"]')
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
-foodElement.textContent = favoriteFoods;
+
 imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt',`<strong>'Prolie image of ${fullName}'</strong>`);
 
@@ -29,8 +29,9 @@ imageElement.setAttribute('alt',`<strong>'Prolie image of ${fullName}'</strong>`
 
 /* Step 5 - Array */
 const favoriteFoods = ['Pizza','Tacos','Pasta','Burgers'];
+let newFood = "Bacon";
+favoriteFoods.push(newFood);
 
-
-
+foodElement.textContent = favoriteFoods;
 
 
