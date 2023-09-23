@@ -35,6 +35,9 @@ let newFood = "Bacon";
 favoriteFoods.push(newFood);
 foodElement.innerHTML += `<br>${favoriteFoods}`;
 
+favoriteFoods.shift();
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
-
+favoriteFoods.pop();
+foodElement.innerHTML += `<br>${favoriteFoods}`;
 
