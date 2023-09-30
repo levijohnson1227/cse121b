@@ -26,7 +26,7 @@ const subtractNumbers = function()
 {
     let subtractNumber1 = Number(document.querySelector('#subtract1').value)
     let subtractNumber2 = Number(document.querySelector('#subtract2').value)
-    document.querySelector('#difference') = add(subtractNumber1, subtractNumber2)
+    document.querySelector('#difference') = subtract(subtractNumber1, subtractNumber2)
 }
 document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
@@ -35,9 +35,9 @@ const multiply = (number1, number2) => number1 * number2;
 
 const multiplyNumbers = () => 
 {
-    let multiplyNumber1 = Number(document.querySelector('#multiply1').value)
-    let multiplyNumber2 = Number(document.querySelector('#multiply2').value)
-    document.querySelector('#product') = add(multiplyNumber1, multiplyNumber2)
+    let factorNumber1 = Number(document.querySelector('#factor1').value)
+    let factorNumber2 = Number(document.querySelector('#factor2').value)
+    document.querySelector('#product') = multiply(factorNumber1, factorNumber2)
 }
 document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
@@ -46,12 +46,12 @@ const divide = (number1, number2) => number1 / number2;
 
 function divideNumbers ()
 {
-    let divideNumber1 = Number(document.querySelector('#divide1').value)
-    let divideNumber2 = Number(document.querySelector('#divide2').value)
-    document.querySelector('#quotient') = add(divideNumber1, divideNumber2)
+    let dividend = Number(document.querySelector('#dividend').value)
+    let divisor = Number(document.querySelector('#divisor').value)
+    document.querySelector('#quotient') = divide(dividend, divisor)
 
 }
-document.querySelector('#divideNumbers').addEventListener('click', Numbers);
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 /* Decision Structure */
 
 
