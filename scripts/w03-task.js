@@ -11,7 +11,7 @@ function addNumbers ()
 {
     let addNumber1 = Number(document.querySelector('#add1').value)
     let addNumber2 = Number(document.querySelector('#add2').value)
-    document.querySelector('#sum') = add(addNumber1, addNumber2)
+    document.querySelector('#sum').value = add(addNumber1, addNumber2);
 
 }
 document.querySelector('#addNumbers').addEventListener('click', addNumbers);
@@ -26,7 +26,7 @@ const subtractNumbers = function()
 {
     let subtractNumber1 = Number(document.querySelector('#subtract1').value)
     let subtractNumber2 = Number(document.querySelector('#subtract2').value)
-    document.querySelector('#difference') = subtract(subtractNumber1, subtractNumber2)
+    document.querySelector('#difference').value = subtract(subtractNumber1, subtractNumber2);
 }
 document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
@@ -37,7 +37,7 @@ const multiplyNumbers = () =>
 {
     let factorNumber1 = Number(document.querySelector('#factor1').value)
     let factorNumber2 = Number(document.querySelector('#factor2').value)
-    document.querySelector('#product') = multiply(factorNumber1, factorNumber2)
+    document.querySelector('#product').value = multiply(factorNumber1, factorNumber2);
 }
 document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
@@ -48,7 +48,7 @@ function divideNumbers ()
 {
     let dividend = Number(document.querySelector('#dividend').value)
     let divisor = Number(document.querySelector('#divisor').value)
-    document.querySelector('#quotient') = divide(dividend, divisor)
+    document.querySelector('#quotient').value = divide(dividend, divisor);
 
 }
 document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
