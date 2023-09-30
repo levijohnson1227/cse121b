@@ -53,12 +53,21 @@ function divideNumbers ()
 }
 document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 /* Decision Structure */
+const currentDate = new Date();
 
+let currentYear;
+currentYer = new Date().getFullYear();
+
+document.getElementById('year').value = currentYear;
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+document.getElementById('array').value = numbersArray;
 
 /* Output Odds Only Array */
+let oddNumbers = numbersArray.filter(number => number % 2 !== 0);
+document.getElementById('odds').value = oddNumbers;
 
 /* Output Evens Only Array */
 
