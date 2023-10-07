@@ -4,11 +4,7 @@
 let myProfile = 
 {
     name: "Levi Johnson", 
-    photo: 
-    {
-        path:'images/templePic.jpg',
-        name: 'Prolie image of Levi Johnson'
-    },
+    photo: { path: 'images/templePic.jpg', altName: 'Picture of Levi Johnson'},
     favoriteFoods: ['Pizza','Tacos','Pasta','Burgers'],
     hobbies: ['Basketball','Golf','Weightlifting','Programming'],
     placesLived: []
@@ -48,8 +44,9 @@ myProfile.placesLived.push(
 document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
-document.querySelector('#src').setAttribute = myProfile.photo.path;
-document.querySelector('#alt').setAttribute = myProfile.photo.name;
+const photoElement = document.getElementById("photo");
+photoElement.src = myProfile.photo.path;
+photoElement.alt = myProfile.photo.altName;
 
 /* Favorite Foods List*/
 myProfile.favoriteFoods.forEach(food => {
@@ -67,15 +64,15 @@ myProfile.hobbies.forEach(hobbie =>{
 
 
 /* Places Lived DataList */
-myProfile.placesLived.forEach(place =>{
-    let dt = document.createElement('dt');
-    dt.textContent = place;
-    document.querySelector('#places-lived').appendChild(dt);
-})
+const placesLivedElement = document.getElementById("places-lived");
 
-myProfile.placesLived.forEach(length =>{
-    let dd = document.createElement('dd');
-    dd.textContent = length;
-    document.querySelector('#places-lived').appendChild(dd);
-    
-})
+myProfile.placesLived.forEach(info => {
+    let dt = document.createElement("dt");
+    dt.textContent = info.place;
+
+    let dd = document.createElement("dd");
+    dd.textContent = info.length;
+
+    placesLivedElement.appendChild(dt);
+    placesLivedElement.appendChild(dd);
+});
