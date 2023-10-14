@@ -49,7 +49,7 @@ const sortBy = (temples) =>
 {
     reset();
     const filter = document.querySelector('#sortBy').value;
-    switch (fliter)
+    switch (filter)
     {
         case 'utah':
             displayTemples(temples.filter(temple => temple.location.inculdes('Utah')))
@@ -63,12 +63,16 @@ const sortBy = (temples) =>
         case 'all':
             displayTemples(temples);
             break;
+        default:
+            break;
       
     }
 }
 
 
-getTemples();
+
 
 /* Event Listener */
-document.querySelector("#sortBy").addEventListener("change", () => {sorBy(templeList)});
+document.querySelector("#sortBy").addEventListener("change", () => {sortBy(templeList)});
+
+getTemples();
